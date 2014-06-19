@@ -18,10 +18,10 @@ namespace BlogStuff
             Console.WriteLine("What numbers do you want to add 5 to. Type S to stop");
             List<int> nums = new List<int>();
 
-            string x;
-            while ((x = Console.ReadLine()).ToLower() != "s" )
+            string userinput;
+            while ((userinput = Console.ReadLine()).ToLower() != "s" )
             {
-                nums.Add(Convert.ToInt32(x));
+                nums.Add(Convert.ToInt32(userinput));
             }
 
             nums.ForEach(num => 
